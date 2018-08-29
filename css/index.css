@@ -16,6 +16,16 @@ a {
     transition: .4s;
     font-size: 13px;
 }
+p {
+    color: var(--text);
+    font-size: 15px;
+    line-height: 28px;
+}
+h2 {
+    color: var(--titles);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 .button {
     border: 2px solid #fff;
     padding: 10px 40px;
@@ -81,6 +91,7 @@ header h1 {
     font-weight: normal;
 }
 header p {
+    color: #fff;
     font-weight: 300;
     font-size: 20px;
     padding-top: 30px;
@@ -94,11 +105,11 @@ header .download-sect a {
     margin: 0 12px;
     padding: 15px 40px
 }
-header .download-sect a:last-child {
+a.button.rose {
     color: var(--primary);
     border-color: var(--primary);
 }
-header .download-sect a:last-child:hover, .download-sect a:first-child {
+a.button.rose:hover, .download-sect a:first-child {
     color: #fff;
     background: var(--primary);
     border-color: var(--primary);
@@ -155,16 +166,12 @@ header .download-sect a:last-child:hover, .download-sect a:first-child {
 .features .description {
     padding: 0 100px;
 }
+
 .features .description h2 {
     color: var(--titles);
-    font-weight: 600;
-    margin-bottom: 15px;
 }
 .features .description > p {
-    color: var(--text);
-    font-size: 15px;
     margin-bottom: 40px;
-    line-height: 28px;
 }
 .features .description .item {
     padding: 25px 0;
@@ -173,4 +180,47 @@ header .download-sect a:last-child:hover, .download-sect a:first-child {
 .features .description .item:nth-child(2) {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+}
+.assets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0;
+}
+.assets .description {
+    padding: 0 100px;
+}
+.assets .description p {
+    margin-bottom: 40px;
+}
+.assets .image {
+    overflow: hidden;
+    height: 550px;
+    position: relative;
+}
+.assets .image img {
+    position: absolute;
+    left: 20px;
+}
+section.diamond {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px;
+    height: 450px;
+    background-size: cover;
+    background-image: url(../assets/polygonal-bg.jpg);
+}
+section.diamond h1{
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+section.diamond p {
+    color: #ACB1B4;
+    margin-bottom: 40px;
+}
+section.diamond img {
+    margin-top: 60px;
 }
