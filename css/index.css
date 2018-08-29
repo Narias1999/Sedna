@@ -224,3 +224,29 @@ section.diamond p {
 section.diamond img {
     margin-top: 60px;
 }
+section.blog {
+    padding: 170px 20px;
+    background: #f3f4f8;
+}
+section.blog .description {
+    padding: 0 90px;
+}
+section.blog h2 {
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+section.blog .divide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section.blog .divide .item {
+    flex-direction: column;
+    padding: 0;
+}
+section.blog .divide .item:first-child {
+    padding-right: 80px;
+    border-right: 1px solid #ddd;
+}
+section.blog .divide .item:last-child {
+    padding-left: 80px;
+}
