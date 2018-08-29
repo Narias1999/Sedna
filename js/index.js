@@ -1,3 +1,7 @@
+AOS.init({
+    once: true
+})
+
 const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
     const cont = nav.querySelector('.container')
