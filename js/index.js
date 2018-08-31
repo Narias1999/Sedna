@@ -1,5 +1,11 @@
-AOS.init({
-    once: true
+
+$(document).ready(function(){
+    AOS.init({
+        once: true
+    })
+    $('.slider').slick({
+        dots: true
+    })
 })
 
 const nav = document.querySelector('nav');
