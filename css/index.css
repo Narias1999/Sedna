@@ -331,16 +331,16 @@ section.slider-container {
     width: 100%;
     height: 450px;
     background-size: cover;
-    position: relative;
+    padding: 100px 80px;
     background-image: url('../assets/testimonials-bg.jpg');
 }
-/* section.slider-container > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 section.slider-container .slider {
     text-align: center;
+    background: transparent;
+    border: 0;
+}
+section.slider-container .slider .s-item  {
+    padding-bottom: 50px;
 }
 section.slider-container .slider .s-item div {
     display: flex;
@@ -366,6 +366,7 @@ section.slider-container .slider .s-item h3 {
     color: #ACB1B4;
     font-size: 16px;
 }
+
 @media only screen and (max-width: 1200px) {
     .second {
         padding: 120px 20px;

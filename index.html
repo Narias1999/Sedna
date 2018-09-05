@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sedna a Free HTML5/CSS3 website</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/flexslider.css">
 </head>
 <body>
     <header>
@@ -106,8 +106,8 @@
             <p>Nam vehicula malesuada lectus, interdum fringilla nibh. Duis aliquam vitae metus a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget faucibus felis pharetra. Proin condimentum et leo quis fringilla.</p>
             <a href="#" class="button rose">what's sketch?</a>
         </div>
-        <div class="image" data-aos="fade-left" data-aos-duration="800" >
-            <img src="assets/macbook-pro.png" alt="">
+        <div class="image" >
+            <img src="assets/macbook-pro.png" data-aos="fade-left" data-aos-duration="800" alt="">
         </div>
     </section>
     <section class="diamond">
@@ -161,30 +161,45 @@
         </div>
     </section>
     <section class="slider-container">
-        <i class="fas fa-angle-left"></i>
-        <div>
-            <div class="slider">
-                <div class="s-item">
-                    <div>
-                        <img src="assets/avatar.jpg" alt="">
+        <div class="flexslider slider">
+            <ul class="slides">
+                <li>
+                    <div class="s-item">
+                        <div>
+                            <img src="assets/avatar.jpg" alt="">
+                        </div>
+                        <h2>"Lorem ipsum dolor sit amet, consectetur"</h2>
+                        <h3>peter finlan, product designer.</h3>
                     </div>
-                    <h2>"Lorem ipsum dolor sit amet, consectetur"</h2>
-                    <h3>peter finlan, product designer.</h3>
-                </div>
-                <div class="s-item">
-                    <div>
-                        <img src="assets/avatar.jpg" alt="">
+                </li>
+                <li>
+                    <div class="s-item">
+                        <div>
+                            <img src="assets/mani.jpg" alt="">
+                        </div>
+                        <h2>"Nunc vel maximus purus. Nullam ac urna ornare."</h2>
+                        <h3>MANOELA ILIC, FOUNDER @ CODROPS.</h3>
                     </div>
-                    <h2>"Lorem ipsum dolor sit amet, consectetur"</h2>
-                    <h3>peter finlan, product designer.</h3>
-                </div>
-            </div>
+                </li>
+                <li>
+                    <div class="s-item">
+                        <div>
+                            <img src="assets/130.jpg" alt="">
+                        </div>
+                        <h2>"Nullam ac urna ornare, ultrices nisl ut, lacinia nisi."<h2>
+                        <h3>BLAZ ROBAR, PIXEL GURU</h3>
+                    </div>
+                </li>
+            </ul>
         </div>
+    </section>
+    <section class="form">
+
     </section>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

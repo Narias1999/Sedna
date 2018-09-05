@@ -3,9 +3,9 @@ $(document).ready(function(){
     AOS.init({
         once: true
     })
-    $('.slider').slick({
-        dots: true
-    })
+    $('.flexslider').flexslider({
+        animation: "slide"
+    });
 })
 
 const nav = document.querySelector('nav');
