@@ -9,6 +9,11 @@
     --titles: #3D4351;
     --text: rgba(28,54,83,.6);
 }
+input {
+    font-family: 'Open Sans', sans-serif;
+    color: #aaa;
+    font-size: 14px;
+}
 a {
     text-decoration: none;
     color: #fff;
@@ -329,9 +334,9 @@ section.blog .btn-container {
 section.slider-container {
     overflow: hidden;
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-size: cover;
-    padding: 100px 80px;
+    padding: 150px 80px;
     background-image: url('../assets/testimonials-bg.jpg');
 }
 section.slider-container .slider {
@@ -365,6 +370,62 @@ section.slider-container .slider .s-item h3 {
     text-transform: uppercase;
     color: #ACB1B4;
     font-size: 16px;
+}
+
+/* ############### Form section ############### */
+
+section.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 20px;
+}
+section.form h2 {
+    margin:  0;
+    font-weight: 400;
+}
+section.form p {
+    margin: 15px 0;  
+}
+section.form .form-cont {
+    width: 100%;
+    max-width: 450px;
+}
+.input-field{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.input-field .icon {
+    align-items: center;
+    border-right: 1px solid #ddd;
+    color: var(--primary);
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    width: 40px;
+}
+.input-field input {
+    width: 100%;
+    padding: 15px 0;
+    padding-left: 50px;
+    border: 0;
+}
+section.form button {
+    width: 100%;
+    padding: 15px 0;
+    text-transform: uppercase;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 @media only screen and (max-width: 1200px) {
